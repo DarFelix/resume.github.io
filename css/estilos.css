@@ -1,0 +1,53 @@
+/* Resetear estilos */
+* {
+    font-family: "Mukta", sans-serif;
+    margin: 0;
+    outline: none;
+    text-decoration: none;
+  }
+
+  body {
+    align-items: center;
+    background: rgb(181, 226, 181);
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
+  }
+
+  body p {
+    text-align: justify;
+
+  }
+
+  .contenedor{
+    background: white;
+    margin: 50px;
+    max-width: 1000px;
+    min-height: 1000px;
+    width: 900px;
+
+  }
+
+  table {
+    width: 100%;
+    border: 1px solid white;
+    padding: 1.1em;
+ }
+ th, td {
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid rgb(80, 88, 82);
+    border-collapse: collapse;
+    padding: 0.3em;
+    caption-side: bottom;
+ }
+
+ header h1 {
+  text-align:center;
+
+ }
+
+  
+ 
+  
