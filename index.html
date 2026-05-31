@@ -12,6 +12,9 @@
 </head>
 <body>
 
+    <!-- Botón cambio de idioma -->
+    <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">EN</button>
+
     <!-- ===== HERO ===== -->
     <header class="hero">
         <div class="hero-bg-grid"></div>
@@ -27,13 +30,13 @@
             </div>
 
             <div class="hero-texto">
-                <p class="hero-saludo"><span class="cursor-dot"></span> Hola, soy</p>
+                <p class="hero-saludo"><span class="cursor-dot"></span> <span data-i18n="hero_saludo">Hola, soy</span></p>
                 <h1 class="hero-nombre">Darwin Francisco<br><span class="hero-apellido">Felix Cely</span></h1>
                 <p class="hero-titulo">
                     <span class="titulo-icon"><i class="fas fa-terminal"></i></span>
-                    Ingeniero de Software y Datos
+                    <span data-i18n="hero_titulo">Ingeniero de Software y Datos</span>
                 </p>
-                <p class="hero-resumen">4+ años de experiencia en desarrollo web y empresarial. Frontend con React y Angular, backend con Node.js y Spring Boot. Enfoque en soluciones escalables y seguras.</p>
+                <p class="hero-resumen" data-i18n="hero_resumen">4+ años de experiencia en desarrollo web y empresarial. Frontend con React y Angular, backend con Node.js y Spring Boot. Enfoque en soluciones escalables y seguras.</p>
 
                 <div class="hero-tags">
                     <a href="mailto:darwinfxc23@gmail.com" class="hero-tag">
@@ -52,10 +55,10 @@
 
                 <div class="hero-btns">
                     <a href="#contacto" class="btn-primary">
-                        <i class="fas fa-paper-plane"></i> Contáctame
+                        <i class="fas fa-paper-plane"></i> <span data-i18n="btn_contacto">Contáctame</span>
                     </a>
                     <a href="https://github.com/DarFelix" target="_blank" class="btn-outline">
-                        <i class="fab fa-github"></i> Ver GitHub
+                        <i class="fab fa-github"></i> <span data-i18n="btn_github">Ver GitHub</span>
                     </a>
                 </div>
             </div>
@@ -72,11 +75,11 @@
         <div class="nav-inner">
             <span class="nav-brand">DF</span>
             <ul class="nav-list">
-                <li><a href="#perfil" class="nav-link"><i class="fas fa-user"></i><span>Perfil</span></a></li>
-                <li><a href="#habilidades" class="nav-link"><i class="fas fa-code"></i><span>Habilidades</span></a></li>
-                <li><a href="#experiencia" class="nav-link"><i class="fas fa-briefcase"></i><span>Experiencia</span></a></li>
-                <li><a href="#educacion" class="nav-link"><i class="fas fa-graduation-cap"></i><span>Educación</span></a></li>
-                <li><a href="#contacto" class="nav-link"><i class="fas fa-envelope"></i><span>Contacto</span></a></li>
+                <li><a href="#perfil" class="nav-link"><i class="fas fa-user"></i><span data-i18n="nav_perfil">Perfil</span></a></li>
+                <li><a href="#habilidades" class="nav-link"><i class="fas fa-code"></i><span data-i18n="nav_habilidades">Habilidades</span></a></li>
+                <li><a href="#experiencia" class="nav-link"><i class="fas fa-briefcase"></i><span data-i18n="nav_experiencia">Experiencia</span></a></li>
+                <li><a href="#educacion" class="nav-link"><i class="fas fa-graduation-cap"></i><span data-i18n="nav_educacion">Educación</span></a></li>
+                <li><a href="#contacto" class="nav-link"><i class="fas fa-envelope"></i><span data-i18n="nav_contacto">Contacto</span></a></li>
             </ul>
         </div>
     </nav>
@@ -86,13 +89,13 @@
 
         <!-- PERFIL -->
         <section id="perfil" class="seccion">
-            <div class="seccion-label">01 / Sobre mí</div>
-            <h2 class="seccion-titulo"><i class="fas fa-user-circle"></i> Perfil Laboral</h2>
+            <div class="seccion-label" data-i18n="perfil_label">01 / Sobre mí</div>
+            <h2 class="seccion-titulo"><i class="fas fa-user-circle"></i> <span data-i18n="perfil_titulo">Perfil Laboral</span></h2>
 
             <div class="perfil-layout">
                 <div class="perfil-texto">
-                    <p>Ingeniero de software y datos con 4 años de experiencia en desarrollo web y empresarial. Experiencia en frontend con <strong>React</strong> y <strong>Angular</strong>, y backend con <strong>Node.js</strong> y <strong>Spring Boot</strong>. Manejo de <strong>SQL Server</strong> y <strong>MySQL</strong>, incluyendo diseño de bases de datos y optimización de consultas.</p>
-                    <p>Con conocimientos en <strong>ciberseguridad</strong>, soporte a producción y despliegues con <strong>Jenkins</strong> y <strong>Docker</strong>. Destaco por la adaptabilidad, trabajo en equipo y enfoque en soluciones escalables y seguras.</p>
+                    <p data-i18n-html="perfil_p1">Ingeniero de software y datos con 4 años de experiencia en desarrollo web y empresarial. Experiencia en frontend con <strong>React</strong> y <strong>Angular</strong>, y backend con <strong>Node.js</strong> y <strong>Spring Boot</strong>. Manejo de <strong>SQL Server</strong> y <strong>MySQL</strong>, incluyendo diseño de bases de datos y optimización de consultas.</p>
+                    <p data-i18n-html="perfil_p2">Con conocimientos en <strong>ciberseguridad</strong>, soporte a producción y despliegues con <strong>Jenkins</strong> y <strong>Docker</strong>. Destaco por la adaptabilidad, trabajo en equipo y enfoque en soluciones escalables y seguras.</p>
                 </div>
                 <div class="perfil-chips">
                     <span class="chip chip-cyan">React</span>
@@ -112,7 +115,7 @@
         <!-- HABILIDADES -->
         <section id="habilidades" class="seccion">
             <div class="seccion-label">02 / Expertise</div>
-            <h2 class="seccion-titulo"><i class="fas fa-code"></i> Habilidades Técnicas</h2>
+            <h2 class="seccion-titulo"><i class="fas fa-code"></i> <span data-i18n="skills_titulo">Habilidades Técnicas</span></h2>
 
             <div class="skills-grid">
                 <div class="skill-card">
@@ -145,12 +148,12 @@
                     <div class="skill-card-icon skill-database">
                         <i class="fas fa-database"></i>
                     </div>
-                    <h3>Bases de Datos</h3>
+                    <h3 data-i18n="skills_databases">Bases de Datos</h3>
                     <ul class="skill-list">
                         <li><i class="fas fa-table" style="color:#CC2927"></i> SQL Server</li>
                         <li><i class="fas fa-dolphin" style="color:#4479A1"></i> MySQL</li>
-                        <li><i class="fas fa-project-diagram" style="color:#06b6d4"></i> Diseño de BD</li>
-                        <li><i class="fas fa-tachometer-alt" style="color:#10b981"></i> Optimización</li>
+                        <li><i class="fas fa-project-diagram" style="color:#06b6d4"></i> <span data-i18n="skills_db_design">Diseño de BD</span></li>
+                        <li><i class="fas fa-tachometer-alt" style="color:#10b981"></i> <span data-i18n="skills_db_opt">Optimización</span></li>
                     </ul>
                 </div>
 
@@ -158,12 +161,12 @@
                     <div class="skill-card-icon skill-devops">
                         <i class="fas fa-infinity"></i>
                     </div>
-                    <h3>DevOps & Seguridad</h3>
+                    <h3 data-i18n="skills_devops">DevOps & Seguridad</h3>
                     <ul class="skill-list">
                         <li><i class="fab fa-docker" style="color:#2496ED"></i> Docker</li>
                         <li><i class="fas fa-tools" style="color:#D24939"></i> Jenkins</li>
                         <li><i class="fab fa-git-alt" style="color:#F05032"></i> Git / GitHub</li>
-                        <li><i class="fas fa-shield-alt" style="color:#10b981"></i> Ciberseguridad</li>
+                        <li><i class="fas fa-shield-alt" style="color:#10b981"></i> <span data-i18n="skills_security">Ciberseguridad</span></li>
                     </ul>
                 </div>
             </div>
@@ -171,8 +174,8 @@
 
         <!-- EXPERIENCIA -->
         <section id="experiencia" class="seccion">
-            <div class="seccion-label">03 / Trayectoria</div>
-            <h2 class="seccion-titulo"><i class="fas fa-briefcase"></i> Experiencia Profesional</h2>
+            <div class="seccion-label" data-i18n="exp_label">03 / Trayectoria</div>
+            <h2 class="seccion-titulo"><i class="fas fa-briefcase"></i> <span data-i18n="exp_titulo">Experiencia Profesional</span></h2>
 
             <div class="timeline">
                 <div class="timeline-item">
@@ -183,15 +186,15 @@
                     <div class="timeline-card">
                         <div class="timeline-top">
                             <div class="timeline-head">
-                                <h3 class="timeline-cargo">Analista de Aplicaciones</h3>
+                                <h3 class="timeline-cargo" data-i18n="exp1_cargo">Analista de Aplicaciones</h3>
                                 <p class="timeline-empresa">
                                     <i class="fas fa-building"></i> Teleperformance Colombia
                                 </p>
                             </div>
-                            <span class="timeline-periodo">Ene 2023 — Actualidad</span>
+                            <span class="timeline-periodo" data-i18n="exp1_periodo">Ene 2023 — Actualidad</span>
                         </div>
                         <ul class="timeline-tareas">
-                            <li>Desarrollo y mantenimiento de aplicaciones web, participando en las diferentes fases del ciclo de vida del software.</li>
+                            <li data-i18n="exp1_tarea">Desarrollo y mantenimiento de aplicaciones web, participando en las diferentes fases del ciclo de vida del software.</li>
                         </ul>
                         <div class="timeline-referencia">
                             <span><i class="fas fa-user-tie"></i> Juan Torres</span>
@@ -209,15 +212,15 @@
                     <div class="timeline-card">
                         <div class="timeline-top">
                             <div class="timeline-head">
-                                <h3 class="timeline-cargo">Desarrollador de Software</h3>
+                                <h3 class="timeline-cargo" data-i18n="exp2_cargo">Desarrollador de Software</h3>
                                 <p class="timeline-empresa">
                                     <i class="fas fa-university"></i> Institución Universitaria Digital de Antioquia
                                 </p>
                             </div>
-                            <span class="timeline-periodo">Feb 2022 — Dic 2022</span>
+                            <span class="timeline-periodo" data-i18n="exp2_periodo">Feb 2022 — Dic 2022</span>
                         </div>
                         <ul class="timeline-tareas">
-                            <li>Apoyar el proceso de desarrollo e implementación de aplicaciones de la Vicerrectoría Académica.</li>
+                            <li data-i18n="exp2_tarea">Apoyar el proceso de desarrollo e implementación de aplicaciones de la Vicerrectoría Académica.</li>
                         </ul>
                         <div class="timeline-referencia">
                             <span><i class="fas fa-user-tie"></i> Adrián López</span>
@@ -232,8 +235,8 @@
 
         <!-- EDUCACIÓN -->
         <section id="educacion" class="seccion">
-            <div class="seccion-label">04 / Formación</div>
-            <h2 class="seccion-titulo"><i class="fas fa-graduation-cap"></i> Educación</h2>
+            <div class="seccion-label" data-i18n="edu_label">04 / Formación</div>
+            <h2 class="seccion-titulo"><i class="fas fa-graduation-cap"></i> <span data-i18n="edu_titulo">Educación</span></h2>
 
             <div class="edu-grid">
                 <div class="edu-card">
@@ -242,7 +245,7 @@
                     </div>
                     <div class="edu-body">
                         <span class="edu-year">2025</span>
-                        <h3>Ingeniero de Software y Datos</h3>
+                        <h3 data-i18n="edu1_titulo">Ingeniero de Software y Datos</h3>
                         <p>Institución Universitaria Digital de Antioquia</p>
                     </div>
                 </div>
@@ -253,20 +256,20 @@
                     </div>
                     <div class="edu-body">
                         <span class="edu-year">2018</span>
-                        <h3>Tecnólogo en Gestión de Mercados</h3>
+                        <h3 data-i18n="edu2_titulo">Tecnólogo en Gestión de Mercados</h3>
                         <p>Servicio Nacional de Aprendizaje SENA</p>
                     </div>
                 </div>
             </div>
 
             <div class="idiomas-wrap">
-                <h3 class="idiomas-titulo"><i class="fas fa-language"></i> Idiomas</h3>
+                <h3 class="idiomas-titulo"><i class="fas fa-language"></i> <span data-i18n="idiomas_titulo">Idiomas</span></h3>
                 <div class="idioma-row">
-                    <span class="idioma-nombre">Inglés</span>
+                    <span class="idioma-nombre" data-i18n="idioma_ingles">Inglés</span>
                     <div class="idioma-barra">
                         <div class="idioma-fill" style="width: 28%"></div>
                     </div>
-                    <span class="idioma-nivel">A2 — Lectura y escritura</span>
+                    <span class="idioma-nivel" data-i18n="idioma_nivel">A2 — Lectura y escritura</span>
                 </div>
             </div>
         </section>
@@ -274,7 +277,7 @@
         <!-- CONTACTO -->
         <section id="contacto" class="seccion seccion-last">
             <div class="seccion-label">05 / Let's connect</div>
-            <h2 class="seccion-titulo"><i class="fas fa-envelope"></i> Contacto</h2>
+            <h2 class="seccion-titulo"><i class="fas fa-envelope"></i> <span data-i18n="contacto_titulo">Contacto</span></h2>
 
             <div class="contacto-layout">
                 <div class="contacto-items">
@@ -288,7 +291,7 @@
                     <a href="tel:+573208730003" class="contacto-item">
                         <div class="contacto-icon-wrap"><i class="fas fa-phone"></i></div>
                         <div>
-                            <p class="contacto-label">Teléfono</p>
+                            <p class="contacto-label" data-i18n="contacto_telefono">Teléfono</p>
                             <p class="contacto-valor">+57 320-873-0003</p>
                         </div>
                     </a>
@@ -302,14 +305,14 @@
                     <span class="contacto-item">
                         <div class="contacto-icon-wrap"><i class="fas fa-map-marker-alt"></i></div>
                         <div>
-                            <p class="contacto-label">Ubicación</p>
+                            <p class="contacto-label" data-i18n="contacto_ubicacion">Ubicación</p>
                             <p class="contacto-valor">Bogotá, Colombia</p>
                         </div>
                     </span>
                 </div>
 
                 <div class="redes-wrap">
-                    <h3>Redes Sociales</h3>
+                    <h3 data-i18n="redes_titulo">Redes Sociales</h3>
                     <div class="redes-grid">
                         <!-- <a href="https://www.linkedin.com/in/francisco-felix-751397127/" target="_blank" class="red linkedin">
                             <i class="fab fa-linkedin-in"></i><span>LinkedIn</span>
@@ -336,8 +339,8 @@
     <footer class="footer">
         <div class="footer-inner">
             <p class="footer-nombre">Darwin Francisco Felix Cely</p>
-            <p class="footer-sub">Ingeniero de Software y Datos &mdash; Bogotá, Colombia</p>
-            <p class="footer-copy">&copy; <span id="footer-year"></span> Todos los derechos reservados.</p>
+            <p class="footer-sub" data-i18n="footer_sub">Ingeniero de Software y Datos — Bogotá, Colombia</p>
+            <p class="footer-copy">&copy; <span id="footer-year"></span> <span data-i18n="footer_copy">Todos los derechos reservados.</span></p>
         </div>
     </footer>
 
@@ -375,6 +378,129 @@
             });
         }, { threshold: 0.4 });
         fills.forEach(f => observer.observe(f));
+    </script>
+    <script>
+        const translations = {
+            es: {
+                page_title:        'Darwin Felix | Ingeniero de Software y Datos',
+                hero_saludo:       'Hola, soy',
+                hero_titulo:       'Ingeniero de Software y Datos',
+                hero_resumen:      '4+ años de experiencia en desarrollo web y empresarial. Frontend con React y Angular, backend con Node.js y Spring Boot. Enfoque en soluciones escalables y seguras.',
+                btn_contacto:      'Contáctame',
+                btn_github:        'Ver GitHub',
+                nav_perfil:        'Perfil',
+                nav_habilidades:   'Habilidades',
+                nav_experiencia:   'Experiencia',
+                nav_educacion:     'Educación',
+                nav_contacto:      'Contacto',
+                perfil_label:      '01 / Sobre mí',
+                perfil_titulo:     'Perfil Laboral',
+                perfil_p1:         'Ingeniero de software y datos con 4 años de experiencia en desarrollo web y empresarial. Experiencia en frontend con <strong>React</strong> y <strong>Angular</strong>, y backend con <strong>Node.js</strong> y <strong>Spring Boot</strong>. Manejo de <strong>SQL Server</strong> y <strong>MySQL</strong>, incluyendo diseño de bases de datos y optimización de consultas.',
+                perfil_p2:         'Con conocimientos en <strong>ciberseguridad</strong>, soporte a producción y despliegues con <strong>Jenkins</strong> y <strong>Docker</strong>. Destaco por la adaptabilidad, trabajo en equipo y enfoque en soluciones escalables y seguras.',
+                skills_titulo:     'Habilidades Técnicas',
+                skills_databases:  'Bases de Datos',
+                skills_db_design:  'Diseño de BD',
+                skills_db_opt:     'Optimización',
+                skills_devops:     'DevOps & Seguridad',
+                skills_security:   'Ciberseguridad',
+                exp_label:         '03 / Trayectoria',
+                exp_titulo:        'Experiencia Profesional',
+                exp1_cargo:        'Analista de Aplicaciones',
+                exp1_periodo:      'Ene 2023 — Actualidad',
+                exp1_tarea:        'Desarrollo y mantenimiento de aplicaciones web, participando en las diferentes fases del ciclo de vida del software.',
+                exp2_cargo:        'Desarrollador de Software',
+                exp2_periodo:      'Feb 2022 — Dic 2022',
+                exp2_tarea:        'Apoyar el proceso de desarrollo e implementación de aplicaciones de la Vicerrectoría Académica.',
+                edu_label:         '04 / Formación',
+                edu_titulo:        'Educación',
+                edu1_titulo:       'Ingeniero de Software y Datos',
+                edu2_titulo:       'Tecnólogo en Gestión de Mercados',
+                idiomas_titulo:    'Idiomas',
+                idioma_ingles:     'Inglés',
+                idioma_nivel:      'A2 — Lectura y escritura',
+                contacto_titulo:   'Contacto',
+                contacto_telefono: 'Teléfono',
+                contacto_ubicacion:'Ubicación',
+                redes_titulo:      'Redes Sociales',
+                footer_sub:        'Ingeniero de Software y Datos — Bogotá, Colombia',
+                footer_copy:       'Todos los derechos reservados.',
+            },
+            en: {
+                page_title:        'Darwin Felix | Software & Data Engineer',
+                hero_saludo:       "Hi, I'm",
+                hero_titulo:       'Software & Data Engineer',
+                hero_resumen:      '4+ years of experience in web and enterprise development. Frontend with React and Angular, backend with Node.js and Spring Boot. Focused on scalable and secure solutions.',
+                btn_contacto:      'Contact me',
+                btn_github:        'View GitHub',
+                nav_perfil:        'Profile',
+                nav_habilidades:   'Skills',
+                nav_experiencia:   'Experience',
+                nav_educacion:     'Education',
+                nav_contacto:      'Contact',
+                perfil_label:      '01 / About me',
+                perfil_titulo:     'Professional Profile',
+                perfil_p1:         'Software and data engineer with 4 years of experience in web and enterprise development. Experience in frontend with <strong>React</strong> and <strong>Angular</strong>, and backend with <strong>Node.js</strong> and <strong>Spring Boot</strong>. Proficient in <strong>SQL Server</strong> and <strong>MySQL</strong>, including database design and query optimization.',
+                perfil_p2:         'Knowledgeable in <strong>cybersecurity</strong>, production support, and deployments with <strong>Jenkins</strong> and <strong>Docker</strong>. I stand out for adaptability, teamwork, and a focus on scalable and secure solutions.',
+                skills_titulo:     'Technical Skills',
+                skills_databases:  'Databases',
+                skills_db_design:  'DB Design',
+                skills_db_opt:     'Optimization',
+                skills_devops:     'DevOps & Security',
+                skills_security:   'Cybersecurity',
+                exp_label:         '03 / Career',
+                exp_titulo:        'Professional Experience',
+                exp1_cargo:        'Application Analyst',
+                exp1_periodo:      'Jan 2023 — Present',
+                exp1_tarea:        'Development and maintenance of web applications, participating in the different phases of the software lifecycle.',
+                exp2_cargo:        'Software Developer',
+                exp2_periodo:      'Feb 2022 — Dec 2022',
+                exp2_tarea:        "Supporting the development and implementation of applications for the Academic Vice-Rector's Office.",
+                edu_label:         '04 / Education',
+                edu_titulo:        'Education',
+                edu1_titulo:       'Software & Data Engineer',
+                edu2_titulo:       'Technologist in Market Management',
+                idiomas_titulo:    'Languages',
+                idioma_ingles:     'English',
+                idioma_nivel:      'A2 — Reading and writing',
+                contacto_titulo:   'Contact',
+                contacto_telefono: 'Phone',
+                contacto_ubicacion:'Location',
+                redes_titulo:      'Social Networks',
+                footer_sub:        'Software & Data Engineer — Bogotá, Colombia',
+                footer_copy:       'All rights reserved.',
+            }
+        };
+
+        let currentLang = localStorage.getItem('lang') || 'es';
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            document.documentElement.lang = lang;
+            document.title = translations[lang].page_title;
+
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.dataset.i18n;
+                if (translations[lang][key] !== undefined) {
+                    el.textContent = translations[lang][key];
+                }
+            });
+
+            document.querySelectorAll('[data-i18n-html]').forEach(el => {
+                const key = el.dataset.i18nHtml;
+                if (translations[lang][key] !== undefined) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+
+            document.getElementById('lang-toggle').textContent = lang === 'es' ? 'EN' : 'ES';
+            localStorage.setItem('lang', lang);
+        }
+
+        document.getElementById('lang-toggle').addEventListener('click', () => {
+            setLanguage(currentLang === 'es' ? 'en' : 'es');
+        });
+
+        setLanguage(currentLang);
     </script>
 </body>
 </html>
